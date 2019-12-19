@@ -1,0 +1,34 @@
+{
+  "name": "udemy-the-web-developer-bootcamp",
+  "version": "1.0.0",
+  "description": "change-this",
+  "main": "index.js",
+  "scripts": {
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
+    "lint": "eslint 'src/**/*.{js,jsx}' --quiet",
+    "eslint-versions": "npm info eslint-config-airbnb@latest peerDependencies",
+    "audit": "npm audit",
+    "USELESS": "nothing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnvincentio/udemy-the-web-developer-bootcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnvincentio/udemy-the-web-developer-bootcamp/issues"
+  },
+  "homepage": "https://github.com/johnvincentio/udemy-the-web-developer-bootcamp#readme",
+  "devDependencies": {
+    "acorn": "^7.1.0",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0"
+  }
+}

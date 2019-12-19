@@ -1,0 +1,22 @@
+
+// Fonts
+
+$font-stack: 'Roboto', sans-serif;
+
+$color-white: #fff;
+$color-black: #000;
+
+$main-color: #26AFEB;
+$alt-color: #FF951F;
+
+$text-color: $color-black;
+
+$body-background-color: $main-color;
+
+@import 'palette-colors';
+
+@import 'mixins';
+
+@import 'setup';
+
+@import 'responsive';

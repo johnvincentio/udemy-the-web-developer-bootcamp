@@ -1,0 +1,240 @@
+/* ----------------------------------- */
+/* Variables */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* Mixins */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* Basic setup */
+/* ----------------------------------- */
+/* line 44, ../scss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 50, ../scss/style.scss */
+html,
+body {
+  background-color: #fff;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------- */
+/* Main Image Section */
+/* ----------------------------------- */
+/* line 64, ../scss/style.scss */
+#my-navbar-toggler {
+  padding: 0;
+}
+
+/* line 68, ../scss/style.scss */
+.jumbotron {
+  min-width: 100%;
+  height: 500px;
+  background: url("http://lh4.ggpht.com/w-9ruGKvMxcvzBn4hhRICkisIP5U05xD2bNthIWO8hb62h24zcMgj76LTdLA15sS8CFh9AQHioRLgNisR0TnftamgGmY=s0") center;
+  background-size: cover;
+  border-radius: 0 !important;
+}
+/* line 73, ../scss/style.scss */
+.jumbotron:hover {
+  cursor: pointer;
+}
+
+/* line 79, ../scss/style.scss */
+#my-brand {
+  font-size: 26px;
+  font-weight: 500;
+  color: #625655;
+}
+
+/* ----------------------------------- */
+/* Collection section */
+/* ----------------------------------- */
+/*
+<div class="outer-box col-xs-12 col-sm-6 col-md-4 col-lg-3">\
+    <figure class="box js--select-item" data-item-id="{{1}}">\
+        <div><img src="{{5}}" alt="{{6}}"></div>\
+        <figcaption class="caption">\
+            <h2 class="text-center">{{2}}</h2>\
+            <p class="text-center">{{3}}</p>\
+        </figcaption>\
+    </figure>\
+</div>';
+*/
+/*
+https://stackoverflow.com/questions/14562457/center-oversized-image-in-div
+
+*/
+/* line 104, ../scss/style.scss */
+.collection {
+  background-color: #e4e1e1;
+  text-align: center;
+}
+/* line 110, ../scss/style.scss */
+.collection .outer-box {
+  margin-top: 20px;
+}
+/* line 112, ../scss/style.scss */
+.collection .outer-box figure {
+  padding: 0;
+  margin: 0;
+}
+/* line 116, ../scss/style.scss */
+.collection .outer-box figure div {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 122, ../scss/style.scss */
+.collection .outer-box figure div img {
+  height: 100%;
+  width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+/* line 129, ../scss/style.scss */
+.collection .outer-box figure div img:hover {
+  cursor: pointer;
+  height: 102%;
+}
+/* line 138, ../scss/style.scss */
+.collection .outer-box figure figcaption h2 {
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 145, ../scss/style.scss */
+.collection .outer-box figure figcaption p {
+  margin: 0;
+  padding-top: 6px;
+  font-weight: 700;
+  font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ----------------------------------- */
+/* Details section */
+/* ----------------------------------- */
+/* line 161, ../scss/style.scss */
+.details .outer-box {
+  margin-top: 80px;
+}
+/* line 164, ../scss/style.scss */
+.details .outer-box img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* line 170, ../scss/style.scss */
+.details .outer-box .art-header h2 {
+  font-size: 28px;
+  margin-top: 40px;
+}
+/* line 174, ../scss/style.scss */
+.details .outer-box .art-header p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+/* line 180, ../scss/style.scss */
+.details .outer-box .art-details {
+  margin-top: 20px;
+  font-size: 18px;
+}
+/* line 183, ../scss/style.scss */
+.details .outer-box .art-details p {
+  line-height: 20px;
+}
+/* line 186, ../scss/style.scss */
+.details .outer-box .art-details .artist {
+  margin-top: 35px;
+}
+/* line 188, ../scss/style.scss */
+.details .outer-box .art-details .artist .artist-name {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* ----------------------------------- */
+/* Events section */
+/* ----------------------------------- */
+/* line 202, ../scss/style.scss */
+.events div {
+  margin-bottom: 25px;
+}
+/* line 205, ../scss/style.scss */
+.events .tour-description {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+/* line 208, ../scss/style.scss */
+.events .tour-description a {
+  padding-left: 10px;
+}
+/* line 213, ../scss/style.scss */
+.events .tour-time a {
+  padding-left: 30px;
+}
+
+/* ----------------------------------- */
+/* Responsive */
+/* ----------------------------------- */
+@media only screen and (max-width: 640px) {
+  /* line 224, ../scss/style.scss */
+  .events .tour-time a {
+    display: block;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /*--- Mobile portrait ---*/
+  /* line 232, ../scss/style.scss */
+  #my-brand {
+    font-size: 22px;
+  }
+
+  /* line 235, ../scss/style.scss */
+  .jumbotron {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 595px) {
+  /*--- Mobile landscape ---*/
+}
+@media only screen and (min-width: 595px) and (max-width: 690px) {
+  /*--- Small tablet portrait ---*/
+}
+@media only screen and (min-width: 690px) and (max-width: 800px) {
+  /*--- Tablet portrait ---*/
+}
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  /*--- Small tablet landscape ---*/
+}
+@media only screen and (min-width: 1024px) and (max-width: 1224px) {
+  /*--- Tablet landscape --- */
+}
+@media only screen and (min-width: 1224px) {
+  /*--- Laptop --- */
+}
+@media only screen and (min-width: 1824px) {
+  /*--- Large Screen --- */
+}
+/* Big tablet to 1200px (widths smaller than 1140px row) */
+/* Small tablet to big tablet: from 768px to 1023px */
+/* Small phones to small tablets; from 481px to 767px */
+/* Small phones from 0 to 480px  */
+
+/*# sourceMappingURL=style.css.map */

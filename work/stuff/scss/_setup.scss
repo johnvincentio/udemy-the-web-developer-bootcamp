@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+body,
+html {
+//    height: 100%;
+    font-size: 16px;
+    font-weight: 400;
+		font-family: $font-stack;
+		color: $text-color;
+		background-color: $body-background-color;
+    // --cover-min-height: 100px;
+}
+
+input, textarea, select, button {
+    font-family: $font-stack;
+}
+
+.hide {
+    display: none!important;
+}
+
+.is-closed {
+    display: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.form-error {
+    color: red;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.capitalize {
+    &:first-letter {
+        text-transform: capitalize;
+    }
+}
+
+.truncate {
+    @include text-truncate;
+}
